@@ -17,7 +17,7 @@ class Base:
 		'''
 		b=base
 		l_str = 'abcdefghijklmnopqrstuvwxyz~!@#$%^&*()_+{}[];,./?'
-		lst = [str(i) for i in range(10)]+ [a for a in l_str]
+		lst = [str(i) for i in range(10)]+ l_str
 		return Base(b,dict(zip([i for i in lst[:b]],[i for i in range(b)])))
 
 	def to_base10(self,value):
